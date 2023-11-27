@@ -25,7 +25,6 @@ public class FoodController {
             consumes = MediaType.APPLICATION_JSON_VALUE
     )
     public ResponseEntity<FoodResultResponse> getFoodResult(@RequestBody FoodRequest request) {
-        log.info("Controller");
         return new ResponseEntity<>(transactionService.getFoodResult(request), HttpStatus.OK);
     }
 

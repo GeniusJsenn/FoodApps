@@ -56,7 +56,7 @@ class TransactionServiceImplTest {
      * Get empty response result.
      */
     @Test
-    @DisplayName("Test for Empty Response")
+    @DisplayName("Test for empty food selection in list.")
     void getEmptyResponseResult(){
         FoodRequest foodRequest = new FoodRequest();
         foodRequest.setFoodList(Collections.emptyList());
